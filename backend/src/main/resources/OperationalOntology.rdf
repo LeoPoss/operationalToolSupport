@@ -1,0 +1,759 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment/"
+     xml:base="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:operationalEquipment="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#containsPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#containsPart">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#OperationalAsset"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#OperationalEquipment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Tool"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#ToolPart"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#containsSkill -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#containsSkill">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Skill"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Skill"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#employsHumanActor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#employsHumanActor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Company"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Actor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#HumanActor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#enablesCompanyService -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#enablesCompanyService">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#OperationalAsset"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#OperationalEquipment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Tool"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#CompanyService"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#hasCorrectTools -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#hasCorrectTools"/>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#hasDocumentation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#hasDocumentation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#OperationalAsset"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#OperationalEquipment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Tool"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Documentation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#hasLocation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Actor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#ManualTask"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#OperationalAsset"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#ToolPart"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#hasParameter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#hasParameter">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#OperationalAsset"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#OperationalEquipment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Tool"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#ToolPart"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#ToolParameter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#hasQualification -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#hasQualification">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Actor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#HumanActor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Qualification"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#hasSkill -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#hasSkill">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Actor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#HumanActor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Skill"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#hasToolType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#hasToolType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#OperationalAsset"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#OperationalEquipment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Tool"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#ToolType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#isBaseQualificationOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#isBaseQualificationOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Qualification"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Qualification"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#isUsedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#isUsedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#usesTool"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#OperationalAsset"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#manageTool -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#manageTool">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Company"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#OperationalAsset"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#providesCompanyService -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#providesCompanyService">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Company"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#CompanyService"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#requiresSkill -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#requiresSkill">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#OperationalAsset"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#OperationalEquipment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Tool"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Skill"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#requiresTool -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#requiresTool">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#ManualTask"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#OperationalAsset"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#OperationalEquipment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Tool"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#requiresToolType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#requiresToolType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#ManualTask"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#ToolType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#usesTool -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#usesTool">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Actor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#HumanActor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#OperationalAsset"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#OperationalEquipment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Tool"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#hasBrand -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#hasBrand">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#hasCorrectTools -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#hasCorrectTools"/>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#hasDescription">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#hasName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#numericalParameter -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#numericalParameter"/>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#taskType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#taskType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#ManualTask"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Actor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Company -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Company"/>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#CompanyService -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#CompanyService"/>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Documentation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Documentation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#HumanActor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#HumanActor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Location"/>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Machine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Machine">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#NonHumanActor"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Actor"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#NonHumanActor"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#OperationalAsset"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#OperationalEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#ManualTask -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#ManualTask"/>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Material -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Material">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#OperationalAsset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#NonHumanActor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#NonHumanActor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Actor"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Machine"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#OperationalAsset"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#OperationalEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#OperationalAsset -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#OperationalAsset"/>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#OperationalEquipment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#OperationalEquipment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#OperationalAsset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Qualification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Qualification"/>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#QualitativeParameter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#QualitativeParameter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#ToolParameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#QuantitativeParameter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#QuantitativeParameter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#ToolParameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Skill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Skill"/>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Tool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Tool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#OperationalAsset"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#OperationalEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#ToolParameter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#ToolParameter"/>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#ToolPart -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#ToolPart"/>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#ToolType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#ToolType"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#CharlieCraftsmen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#CharlieCraftsmen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#HumanActor"/>
+        <operationalEquipment:hasQualification rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Meister"/>
+        <operationalEquipment:hasSkill rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#canUsePowerTools"/>
+        <operationalEquipment:usesTool rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Makita_HR1841F"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Customer1Location -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Customer1Location">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Drill -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Drill">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#ToolPart"/>
+        <operationalEquipment:hasParameter rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#DrillSize"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#DrillSize -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#DrillSize">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#QualitativeParameter"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#ToolParameter"/>
+        <operationalEquipment:numericalParameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></operationalEquipment:numericalParameter>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#EaseOfUse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#EaseOfUse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#QuantitativeParameter"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#ToolParameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#HammerDrill -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#HammerDrill">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#ToolType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Makita_HR1841F -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Makita_HR1841F">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#OperationalAsset"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#OperationalEquipment"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Tool"/>
+        <operationalEquipment:containsPart rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Drill"/>
+        <operationalEquipment:enablesCompanyService rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#RepairHeaters"/>
+        <operationalEquipment:hasDocumentation rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#StandardDocumentation"/>
+        <operationalEquipment:hasLocation rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#atCompanyPremise"/>
+        <operationalEquipment:hasParameter rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#currentBatteryLevel"/>
+        <operationalEquipment:hasToolType rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#HammerDrill"/>
+        <operationalEquipment:isUsedBy rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#CharlieCraftsmen"/>
+        <operationalEquipment:hasBrand>Makita</operationalEquipment:hasBrand>
+        <operationalEquipment:hasName>HR1841F</operationalEquipment:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Meister -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Meister">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Qualification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#RepairHeater -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#RepairHeater">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#ManualTask"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#OperationalAsset"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#ToolPart"/>
+        <operationalEquipment:hasLocation rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Customer1Location"/>
+        <operationalEquipment:requiresTool rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Makita_HR1841F"/>
+        <operationalEquipment:requiresToolType rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#HammerDrill"/>
+        <operationalEquipment:hasCorrectTools rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</operationalEquipment:hasCorrectTools>
+        <operationalEquipment:taskType>repairHeater</operationalEquipment:taskType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#RepairHeaters -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#RepairHeaters">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#CompanyService"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#StandardDocumentation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#StandardDocumentation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Documentation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#TestCompany -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#TestCompany">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Company"/>
+        <operationalEquipment:employsHumanActor rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#CharlieCraftsmen"/>
+        <operationalEquipment:manageTool rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Makita_HR1841F"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#atCompanyPremise -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#atCompanyPremise">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#canUsePowerTools -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#canUsePowerTools">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Skill"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#currentBatteryLevel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#currentBatteryLevel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#QualitativeParameter"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#ToolParameter"/>
+        <operationalEquipment:numericalParameter rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25</operationalEquipment:numericalParameter>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Actor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Company"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#CompanyService"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Documentation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Location"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#ManualTask"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#OperationalAsset"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Qualification"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Skill"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#ToolParameter"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#ToolPart"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#ToolType"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment/a">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment/t">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment/tool">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>hascorrectTools</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#Actor"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment/a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#ManualTask"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment/t"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#usesTool"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment/a"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment/tool"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#requiresTool"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment/t"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment/tool"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#taskType"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment/t"/>
+                                                        <swrl:argument2>repairheater</swrl:argument2>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment#hasCorrectTools"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment/a"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/leo/ontologies/2024/5/operationalEquipment/t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

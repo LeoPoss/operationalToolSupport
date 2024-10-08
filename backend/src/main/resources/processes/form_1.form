@@ -1,0 +1,41 @@
+{
+  "components": [
+    {
+      "values": [
+        {
+          "label": "build",
+          "value": "build"
+        },
+        {
+          "label": "repair",
+          "value": "repair"
+        },
+        {
+          "label": "tearDown",
+          "value": "tearDown"
+        }
+      ],
+      "label": "Task Type",
+      "type": "select",
+      "layout": {
+        "row": "Row_0zqqdbj",
+        "columns": null
+      },
+      "id": "Field_0wqhnln",
+      "key": "taskType",
+      "searchable": true,
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "type": "default",
+  "id": "Form_14f3g6w",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.22.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.21.0",
+  "schemaVersion": 16
+}
