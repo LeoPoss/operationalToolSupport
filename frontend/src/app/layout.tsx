@@ -37,7 +37,7 @@ export default function RootLayout({
 								className="flex items-center gap-1 text-current"
 								href="https://go.ur.de/iot"
 							>
-								<span className="text-default-600 text-sm">___ • 2024</span>
+								<span className="text-default-600 text-sm">Leo Poss, University of Regensburg • 2024</span>
 							</Link>
 						</footer>
 					</div>
